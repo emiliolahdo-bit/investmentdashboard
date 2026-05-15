@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Backgrounds (mörkast → ljusast) */
+    --bg-0: #0a0a0b;
+    --bg-1: #111114;
+    --bg-2: #1a1a1f;
+    --bg-3: #26262e;
+
+    /* Text */
+    --text-primary: #f5f5f7;
+    --text-secondary: #a1a1aa;
+    --text-muted: #6b6b73;
+
+    /* Borders */
+    --border-subtle: #1f1f24;
+    --border-default: #2a2a31;
+
+    /* Funktionella accenter */
+    --pnl-positive: #22c55e;
+    --pnl-negative: #ef4444;
+    --warning: #f59e0b;
+    --neutral-data: #3b82f6;
+    --info: #06b6d4;
+
+    /* Geometri */
+    --radius: 4px;
+  }
+
+  html,
+  body {
+    background-color: var(--bg-0);
+    color: var(--text-primary);
+    font-family: var(--font-sans), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Standard: alla siffror i monospace med tabular nums */
+  .tabular {
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}

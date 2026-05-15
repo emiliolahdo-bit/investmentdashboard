@@ -1,0 +1,43 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Next.js build output
+.next
+out
+build
+dist
+
+# Production
+*.tsbuildinfo
+next-env.d.ts
+
+# Environment variables (NEVER commit these)
+.env
+.env.local
+.env*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Editor
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel
+
+# Drizzle (only ignore actual db files, keep config)
+drizzle/meta/
